@@ -1,0 +1,82 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label for="c-op_name" class="control-label col-xs-12 col-sm-2">{:__('Op_name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-op_name" data-rule="required" class="form-control" name="row[op_name]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-openid" class="control-label col-xs-12 col-sm-2">{:__('Openid')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-openid" data-rule="required" class="form-control" name="row[openid]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-order_id" class="control-label col-xs-12 col-sm-2">{:__('Order_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-order_id" data-rule="required" data-db-table="order" class="form-control selectpage" name="row[order_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-user_id" class="control-label col-xs-12 col-sm-2">{:__('User_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-user_id" data-rule="required" data-db-table="user" data-field="nickname" class="form-control selectpage" name="row[user_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-block_id" class="control-label col-xs-12 col-sm-2">{:__('Block_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-block_id" data-rule="required" data-db-table="block" class="form-control selectpage" name="row[block_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-room_id" class="control-label col-xs-12 col-sm-2">{:__('Room_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-room_id" data-rule="required" data-db-table="room" class="form-control selectpage" name="row[room_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-cell_id" class="control-label col-xs-12 col-sm-2">{:__('Cell_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-cell_id" data-rule="required" data-db-table="cell" class="form-control selectpage" name="row[cell_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-device_id" class="control-label col-xs-12 col-sm-2">{:__('Device_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-device_id" data-rule="required" data-db-table="device" class="form-control selectpage" name="row[device_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-agent_id" class="control-label col-xs-12 col-sm-2">{:__('Agent_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-agent_id" data-rule="required" data-db-table="agent" class="form-control selectpage" name="row[agent_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-op_desc" class="control-label col-xs-12 col-sm-2">{:__('Op_desc')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-op_desc" data-rule="required" class="form-control" name="row[op_desc]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-op_type" class="control-label col-xs-12 col-sm-2">{:__('Op_type')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-op_type" data-rule="required" class="form-control" name="row[op_type]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-create_time" class="control-label col-xs-12 col-sm-2">{:__('Create_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-create_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[create_time]" type="text" value="{:date('Y-m-d H:i:s')}">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

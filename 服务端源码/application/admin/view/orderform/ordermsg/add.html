@@ -1,0 +1,136 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label for="c-order_sn" class="control-label col-xs-12 col-sm-2">{:__('Order_sn')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-order_sn" data-rule="required" class="form-control" name="row[order_sn]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-use_time" class="control-label col-xs-12 col-sm-2">{:__('Use_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-use_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[use_time]" type="text" value="{:date('Y-m-d H:i:s')}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-begin_time" class="control-label col-xs-12 col-sm-2">{:__('Begin_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-begin_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[begin_time]" type="text" value="{:date('Y-m-d H:i:s')}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-end_time" class="control-label col-xs-12 col-sm-2">{:__('End_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-end_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[end_time]" type="text" value="{:date('Y-m-d H:i:s')}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-order_status" class="control-label col-xs-12 col-sm-2">{:__('Order_status')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-order_status" class="form-control" name="row[order_status]" type="number" value="1">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-pay_status" class="control-label col-xs-12 col-sm-2">{:__('Pay_status')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-pay_status" class="form-control" name="row[pay_status]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-refund_sn" class="control-label col-xs-12 col-sm-2">{:__('Refund_sn')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-refund_sn" data-rule="required" class="form-control" name="row[refund_sn]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-refund_status" class="control-label col-xs-12 col-sm-2">{:__('Refund_status')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-refund_status" class="form-control" name="row[refund_status]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-coupon_sn" class="control-label col-xs-12 col-sm-2">{:__('Coupon_sn')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-coupon_sn" data-rule="required" class="form-control" name="row[coupon_sn]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-price" class="control-label col-xs-12 col-sm-2">{:__('Price')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-price" class="form-control" name="row[price]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-total_money" class="control-label col-xs-12 col-sm-2">{:__('Total_money')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-total_money" class="form-control" name="row[total_money]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-amount" class="control-label col-xs-12 col-sm-2">{:__('Amount')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-amount" class="form-control" name="row[amount]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-deduction_amount" class="control-label col-xs-12 col-sm-2">{:__('Deduction_amount')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-deduction_amount" class="form-control" name="row[deduction_amount]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-refund_money" class="control-label col-xs-12 col-sm-2">{:__('Refund_money')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-refund_money" class="form-control" name="row[refund_money]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-user_id" class="control-label col-xs-12 col-sm-2">{:__('User_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-user_id" data-rule="required" data-db-table="user" data-field="nickname" class="form-control selectpage" name="row[user_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-block_id" class="control-label col-xs-12 col-sm-2">{:__('Block_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-block_id" data-rule="required" data-db-table="block" class="form-control selectpage" name="row[block_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-room_id" class="control-label col-xs-12 col-sm-2">{:__('Room_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-room_id" data-rule="required" data-db-table="room" class="form-control selectpage" name="row[room_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-cell_id" class="control-label col-xs-12 col-sm-2">{:__('Cell_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-cell_id" data-rule="required" data-db-table="cell" class="form-control selectpage" name="row[cell_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-create_time" class="control-label col-xs-12 col-sm-2">{:__('Create_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-create_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[create_time]" type="text" value="{:date('Y-m-d H:i:s')}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-dosage" class="control-label col-xs-12 col-sm-2">{:__('Dosage')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-dosage" class="form-control" name="row[dosage]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-coupon_id" class="control-label col-xs-12 col-sm-2">{:__('Coupon_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-coupon_id" data-rule="required" data-db-table="coupon" class="form-control selectpage" name="row[coupon_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

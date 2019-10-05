@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.2.0.js"></script>
+</head>
+<body>
+<p id="id">null</p>
+<p id="user_info">null</p>
+</body>
+<script>
+  $.get('http://119.29.109.29/fastadmin/public/index.php/chatapi/user_info/userchat',function (result) {
+        console.log(result);
+        document.getElementById('id').innerHTML(result);
+        var send_data = {
+            'openid':result
+        };
+      getUserInfo(send_data)
+  });
+    function getUserInfo(data){
+      $.get('http://119.29.109.29/fastadmin/public/index.php/chatapi/userinfo/userobtain',JSON.stringify(data),
+      function (user_info) {
+          console.log(user_info);
+          document.getElementById('user_info').innerHTML(user_info)
+      })
+    }
+</script>
+</html>

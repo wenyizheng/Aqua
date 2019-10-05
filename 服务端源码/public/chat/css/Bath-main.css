@@ -1,0 +1,340 @@
+body{
+    width:100%;
+    height: 100%;
+    font-family: 黑体;
+}
+/*主界面*/
+hr{
+    margin: 0;
+}
+.big-div{
+    width: 100%;
+    overflow: hidden;
+}
+.main-div{
+    position:absolute;
+    width:100%;
+    height: 100%;
+    top:0%;
+    left: 0%;
+    background-color:#eaeeef;
+}
+.container{
+    padding: 0;
+}
+#mtop-row{
+    font-size: 16px;
+}
+.mtop-img{
+    width:20%;
+    margin:15% 10%;
+}
+.mtop-img-change{
+    width:15%;
+    margin:13% 13%;
+}
+.mtopcenterr-img{
+    width:22%;
+    margin:13% 0% ;
+}
+.mtopcenterr-img-change{
+    width:22%;
+    margin:8% 0% ;
+}
+#mtop2-row{
+    margin-bottom: 0%;
+}
+.mtop2-img{
+    width:7%;
+    margin:8% 5% 0% 10%;
+}
+.mtop2-form{
+    margin:0%;
+    padding:0%;
+    background-color:transparent;
+    font-size:13;
+    font-family: 黑体;
+}
+.mtop2-select{
+    width: 39%;
+    border: solid 0px #000;
+    outline:none;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    background:url("../bath-img/arrow.png") no-repeat scroll right center transparent;
+    padding-right:7%;
+}
+.col-xs-10{
+    margin: 0;
+}
+.mtop2-op1{
+    margin: 0% 20%;
+}
+.bath-intro{
+    width:53%;
+    margin: 0.1%;
+}
+.bath-img{
+    width:74%;
+}
+.bath2-img{
+    width:73%;
+}
+.warn-img{
+    width: 98%;
+}
+.helpchoose{
+    width:85%;
+}
+.bottom-menu table tr td{
+    font-size: 10px;
+    color:rgb(180,180,180);
+}
+.main-menu1{
+    width:30%;
+}
+.main-menu2{
+    width:37%;
+}
+.main-menu3{
+    width:35%;
+}
+.main-menu4{
+    width:37%;
+}
+.main-menu5{
+    width:32%;
+}
+.time-select0 {
+    border: solid 0px #000;
+    outline:none;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    background: url("../bath-img/arrow.png") no-repeat scroll right center transparent;
+    margin:0 2% 0 2%;
+    width:28%;
+}
+#main-button{
+    margin: 5.5% 0 0 0%;
+    text-align: center;
+    width: 20%;
+}
+.main-button{
+    border:none;
+    outline:none;
+    color:white;
+    padding:15% 15%;
+    background-color:#02ccff;
+    font-size: 13;
+    border-radius: 10%;
+}
+/*左侧菜单*/
+.left-menu{
+    position: absolute;
+    left:-100%;
+    top:0%;
+    width:100%;
+    height: 100%;
+}
+.left-head{
+    width:80%;
+    border-radius:50%;
+}
+.left-name{
+    font-size:22;
+    color:white;
+    font-family: 黑体;
+}
+.left-sum{
+    width:27%;
+}
+.left-sumMoney{
+    width:35%;
+}
+.left-sum-name{
+    font-size:17;
+    color:white;
+}
+/*预订情况*/
+.bath-info{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    background-color:#eaeeef;
+}
+.bath-slip{
+    position: relative;
+    width:45%;
+    height:39%;
+    background:url("../bath-img/slip5.png")  no-repeat scroll center ;
+}
+.time-range{
+    color:grey;
+    font-size:12px;
+    -webkit-transform: scale(0.90);
+    margin:1% 0% 1% 0%;
+}
+.date-select{
+    width:95%;
+    background-color:lightgrey;
+}
+.date-select select{
+    width:100%;
+    padding: 0;
+}
+.datetime{
+    font-size: 15;
+    color:rgb(180,180,180);
+}
+.slip-intro{
+    width:86%;
+    text-align: left;
+    color:rgb(160,160,160);
+    font-family: 微软雅黑;
+    font-size: 14;
+}
+.time-select {
+    border: solid 0px #000;
+    outline:none;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    background: url("../bath-img/arrow.png") no-repeat scroll right center transparent;
+    margin:0 2% 0 2%;
+    width:12%;
+}
+.slip-ok{
+    width:100%;
+}
+.slipok-img{
+    width:100%;
+    border:none;
+    outline:none;
+    background-color: #25b8fd;
+    color:white;
+    text-align: center;
+    padding:3% 0;
+    font-size: 20;
+}
+.slip-top{
+    width:3%;
+    height:1%;
+    background-color: grey;
+}
+.append-time{
+    position: absolute;
+    display: inline-block;
+    height: 4%;
+    font-size:12px;
+    -webkit-transform: scale(0.90);
+    color:#995cff;
+}
+.append-sign{
+    position:absolute;
+    background-color:#995cff;
+    width:6%;
+    height:0.7%;
+    left:47%;
+}
+/*右侧通知*/
+#notice{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    background-color:#fdfdf1;
+ }
+.notice-module{
+    position:relative;
+    height:10%;
+    width: 92%;
+    margin: 0 4%;
+    border:solid   lightgray;
+    border-width: 0 0 1 0;
+}
+.notice-data{
+    position:relative;
+    width: 15%;
+    left: 85%;
+    font-size: 12;
+    top: 4%;
+}
+.notice-title{
+    position:relative;
+    width: 90%;
+    left: 2%;
+    font-size: 14;
+    top: 10%;
+}
+.notice-in{
+    position:relative;
+    width: 2.2%;
+    display: inherit;
+    left: 94%;
+    top: -15%;
+}
+.notice-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    display: block;
+}
+.notice-turn{
+    position:relative;
+    width: 3%;
+    left: 4%;
+    top: 2%;
+    display:block;
+}
+.notice-text{
+    position:relative;
+    width:80%;
+    left:10%;
+    top:8%;
+}
+/*执行完成提示框*/
+.OkLogin{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    background-color:transparent;
+}
+#point{
+    border-radius:7px;
+    border: solid 1px transparent;
+    background-color: rgba(0,0,0,0.7);
+}
+.true{
+    width:30%;
+}
+#point-text{
+    font-size: 25;
+    color:white;
+}
+/*表单验证错误提示框*/
+.error{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    background-color:transparent;
+}
+.error-img{
+    width:30%;
+}
+#mistake{
+    border-radius:7px;
+    border: solid 1px transparent;
+    background-color: rgba(0,0,0,0.7);
+}
+#error-text{
+    font-size: 21;
+    color:white;
+}
+
+

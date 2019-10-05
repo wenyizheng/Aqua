@@ -1,0 +1,160 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label for="c-scene_sn" class="control-label col-xs-12 col-sm-2">{:__('Scene_sn')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-scene_sn" data-rule="required" class="form-control" name="row[scene_sn]" type="text" value="{$row.scene_sn}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-channel_id" class="control-label col-xs-12 col-sm-2">{:__('Channel_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-channel_id" data-rule="required" data-db-table="channel" class="form-control selectpage" name="row[channel_id]" type="text" value="{$row.channel_id}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-channel_sn" class="control-label col-xs-12 col-sm-2">{:__('Channel_sn')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-channel_sn" data-rule="required" class="form-control" name="row[channel_sn]" type="text" value="{$row.channel_sn}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-title" class="control-label col-xs-12 col-sm-2">{:__('Title')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-title" data-rule="required" class="form-control" name="row[title]" type="text" value="{$row.title}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-slug" class="control-label col-xs-12 col-sm-2">{:__('Slug')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-slug" data-rule="required" class="form-control" name="row[slug]" type="text" value="{$row.slug}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-desc" class="control-label col-xs-12 col-sm-2">{:__('Desc')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-desc" data-rule="required" class="form-control" name="row[desc]" type="text" value="{$row.desc}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-scene_type" class="control-label col-xs-12 col-sm-2">{:__('Scene_type')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-scene_type" class="form-control" name="row[scene_type]" type="number" value="{$row.scene_type}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-scope" class="control-label col-xs-12 col-sm-2">{:__('Scope')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-scope" class="form-control" name="row[scope]" type="number" value="{$row.scope}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-limit" class="control-label col-xs-12 col-sm-2">{:__('Limit')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-limit" class="form-control" name="row[limit]" type="number" value="{$row.limit}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-agent_id" class="control-label col-xs-12 col-sm-2">{:__('Agent_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-agent_id" data-rule="required" data-db-table="agent" class="form-control selectpage" name="row[agent_id]" type="text" value="{$row.agent_id}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-block_id" class="control-label col-xs-12 col-sm-2">{:__('Block_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-block_id" data-rule="required" data-db-table="block" class="form-control selectpage" name="row[block_id]" type="text" value="{$row.block_id}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-room_id" class="control-label col-xs-12 col-sm-2">{:__('Room_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-room_id" data-rule="required" data-db-table="room" class="form-control selectpage" name="row[room_id]" type="text" value="{$row.room_id}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-cell_id" class="control-label col-xs-12 col-sm-2">{:__('Cell_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-cell_id" data-rule="required" data-db-table="cell" class="form-control selectpage" name="row[cell_id]" type="text" value="{$row.cell_id}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-device_id" class="control-label col-xs-12 col-sm-2">{:__('Device_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-device_id" data-rule="required" data-db-table="device" class="form-control selectpage" name="row[device_id]" type="text" value="{$row.device_id}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-condition" class="control-label col-xs-12 col-sm-2">{:__('Condition')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-condition" class="form-control" name="row[condition]" type="text" value="{$row.condition}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-begin_time" class="control-label col-xs-12 col-sm-2">{:__('Begin_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-begin_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[begin_time]" type="text" value="{$row.begin_time|datetime}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-end_time" class="control-label col-xs-12 col-sm-2">{:__('End_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-end_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[end_time]" type="text" value="{$row.end_time|datetime}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-available_begin_time" class="control-label col-xs-12 col-sm-2">{:__('Available_begin_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-available_begin_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[available_begin_time]" type="text" value="{$row.available_begin_time|datetime}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-available_end_time" class="control-label col-xs-12 col-sm-2">{:__('Available_end_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-available_end_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[available_end_time]" type="text" value="{$row.available_end_time|datetime}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-scene_status" class="control-label col-xs-12 col-sm-2">{:__('Scene_status')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-scene_status" class="form-control" name="row[scene_status]" type="number" value="{$row.scene_status}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-create_time" class="control-label col-xs-12 col-sm-2">{:__('Create_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-create_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[create_time]" type="text" value="{$row.create_time|datetime}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-discount" class="control-label col-xs-12 col-sm-2">{:__('Discount')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-discount" class="form-control" name="row[discount]" type="number" value="{$row.discount}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-fulldown_full" class="control-label col-xs-12 col-sm-2">{:__('Fulldown_full')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-fulldown_full" class="form-control" name="row[fulldown_full]" type="number" value="{$row.fulldown_full}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-fulldown_down" class="control-label col-xs-12 col-sm-2">{:__('Fulldown_down')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-fulldown_down" class="form-control" name="row[fulldown_down]" type="number" value="{$row.fulldown_down}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-integral" class="control-label col-xs-12 col-sm-2">{:__('Integral')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-integral" class="form-control" name="row[integral]" type="number" value="{$row.integral}">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>
